@@ -26,25 +26,29 @@
       {.if colorData}
       data-weight-topright="{colorData.topRightAverage|color-weight}"
       {.end}>
-
-        {.image?}<img {@|image-meta} 
+        
+          {.image?}<img {@|image-meta} 
           data-load="false" class="loading"
           data-image-stretch="false" 
           data-click-through-url="{clickthroughUrl}"
           />{.end}
+        
         {.video?}{@|video}{.end}
+        
         <div class="sqs-spin visible">
           <div class="sqs-spin-content"></div>
         </div>
         <div class="ctrl-button resize"><a class="icon-resize">+</a></div>
-
-        <div class="image-detail-wrapper">
-          <div class="image-title">{title}</div>
-          <div class="image-description">{body}</div>
-        </div>
+          <div class="image-detail-wrapper">
+            <div class="image-title">{title}</div>
+            <div class="image-description">{body}</div>
+          </div>
       </div>
     {.end}
   </div>
+
+
+
 
   <ul class="nav-projects">
     <div class="arrow-wrapper left">
